@@ -4,16 +4,26 @@ class Solution:
             nums = list(str(nums))
             n = len(nums)
             i = n-2
+            # i = rightmost position where the increasing pair starts.
+            # 1 2 7 6 5 4 3
             while i>=0 and nums[i]>nums[i+1]:
                 i-=1
             if i==-1:
                 nums.reverse()
                 return
             j = n-1
+            # j = rightmost element greater than the pivot.
             while nums[j]<=nums[i]:
                 j-=1
             nums[j],nums[i] = nums[i],nums[j]
             nums[i+1: ] = reversed(nums[i+1:])
+            # left = i + 1
+            # right = n - 1
+
+            # while left < right:
+            #     nums[left], nums[right] = nums[right], nums[left]
+            #     left += 1
+            #     right -= 1
             result = "".join(nums)
             return result
         word = ""
