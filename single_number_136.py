@@ -3,4 +3,4 @@ def single_num(arr):
     for n in arr:
         result ^=n
     return result
-print(single_num([4,1,2,1,2]))
+print(single_num([4,1,2,1,2]))  # o/p 4

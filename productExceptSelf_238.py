@@ -1,0 +1,15 @@
+def productOfarrEcxeptSelf(nums):
+  n = len(nums)
+  ans = [0]*n
+  prefix = 1
+  for i in range(n):
+    ans[i] = prefix
+    prefix *=nums[i]
+  print(ans)
+  suffix = 1
+  for i in range(n-1,-1,-1):
+    ans[i] *=suffix
+    suffix *=nums[i]
+  
+  return ans
+print(productOfarrEcxeptSelf([0,0]))
