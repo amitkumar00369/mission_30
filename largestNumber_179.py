@@ -31,5 +31,3 @@ def largestNumber(arr):
 print(largestNumber( [3,30,34,5,9]))
 
 
-def longestCommonPrefix()
-        seen = set()
