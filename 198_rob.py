@@ -9,3 +9,4 @@ def rob(nums):
             prev1 = current
 
         return prev1
+print(rob([1,2,3,1])) # 4
