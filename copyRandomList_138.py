@@ -31,3 +31,4 @@ class Solution:
             current = current.next
 
         return old_to_new[head]
+

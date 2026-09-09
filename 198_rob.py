@@ -10,3 +10,5 @@ def rob(nums):
 
         return prev1
 print(rob([1,2,3,1])) # 4
+
+# 213,232
