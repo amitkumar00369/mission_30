@@ -15,9 +15,6 @@ def sumOfDigit(s,k):
     return s
     
     
-    
-
-   
-      
+# print(sumOfDigit("11111222223",3))
 
 print(sumOfDigit("11111222223",3))
